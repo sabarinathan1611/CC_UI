@@ -1,0 +1,63 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(21, 145, 170);
+  background: -moz-linear-gradient(
+    159deg,
+    rgba(21, 145, 170, 1) 14%,
+    rgba(9, 87, 121, 1) 65%,
+    rgba(6, 0, 111, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    159deg,
+    rgba(21, 145, 170, 1) 14%,
+    rgba(9, 87, 121, 1) 65%,
+    rgba(6, 0, 111, 1) 100%
+  );
+  background: linear-gradient(
+    159deg,
+    rgba(21, 145, 170, 1) 14%,
+    rgba(9, 87, 121, 1) 65%,
+    rgba(6, 0, 111, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1591aa",endColorstr="#06006f",GradientType=1);
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  /* align-content: center; */
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
+}
+.card {
+  background: #191a20c7;
+  width: 70%;
+  height: 25vh;
+  border: 1px solid #e80000;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transform: translateX(100px) scale(0);
+  opacity: 0.2;
+  transition: 150ms;
+  margin: 2px;
+}
+.card.show {
+  transform:translateX(0) scale(1);
+  opacity: 1;
+}
+
+form {
+  border: 2px solid #ede3ea6d;
+  width: 250px;
+}
+input {
+  background: transparent;
+  color: #fff;
+  border-bottom: 2px solid #e80000;
+  padding: 0px;
+  margin: 0px;
+}

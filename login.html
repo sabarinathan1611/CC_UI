@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css" />
+  </head>
+  <body>
+    <div class="backimg"></div>
+    <div class="container">
+      <div class="card">
+        <!-- <i id="rotate" ><img src="/img/refresh.png" alt=""></i> -->
+
+        <div class="front">
+          <h3 class="login">LOGIN</h3>
+
+          <form id="login" action="/login" method="post">
+            <!-- <label for="Email">Email</label> -->
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <!-- <label for="">Password</label> -->
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="password"
+            />
+            <a href="/forgetpassword">Forget Password</a>
+            <button type="submit">Login</button>
+          </form>
+          <input type="button" class="tosignup" value="Create Account" />
+        </div>
+        <div class="back">
+          <h3 class="login">SIGNUP</h3>
+          <form id="signup" action="" method="post">
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <input type="text" name="name" id="name" placeholder="Name" />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="password"
+            />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="password"
+            />
+            <button type="submit">Create Account</button>
+          </form>
+          <input type="button" class="tologin" value="LOGIN" />
+        </div>
+      </div>
+    </div>
+    <script src="/js/login.js"></script>
+  </body>
+</html>
