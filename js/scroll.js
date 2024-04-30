@@ -1,4 +1,5 @@
 const cards = document.querySelectorAll('.card');
+form = document.getElementById('');
 const observer = new IntersectionObserver(entries=>{
     console.log(entries)
     entries.forEach(entry =>{
@@ -6,7 +7,7 @@ const observer = new IntersectionObserver(entries=>{
     })
 },{
     threshold:0.5,
-rootMargin:"-100px"
+rootMargin:"-150px"
 
 })
 
