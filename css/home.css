@@ -8,8 +8,31 @@ body {
   width: 100%;
   min-height: 100vh;
   background-color: #16161d;
+  /* background: linear-gradient(90deg, #04b471, #16161d, #044c22, #16161d,#299b74,#16161d,#297149);
+  background-size: 1800% 1800%;
+  -webkit-animation: Aurora 180s ease infinite;
+  -moz-animation: Aurora 180s ease infinite;
+  animation: Aurora 180s ease infinite;
+animation-iteration-count: infinite; */
   font-family: "Noto Sans", sans-serif;
 }
+
+
+/* @-webkit-keyframes Aurora {
+    0%{background-position:18% 0%}
+    50%{background-position:83% 100%}
+    100%{background-position:18% 0%}
+}
+@-moz-keyframes Aurora {
+    0%{background-position:18% 0%}
+    50%{background-position:83% 100%}
+    100%{background-position:18% 0%}
+}
+@keyframes Aurora { 
+    0%{background-position:18% 0%}
+    50%{background-position:83% 100%}
+    100%{background-position:18% 0%}
+} */
 
 
 .container {
