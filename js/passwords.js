@@ -19,16 +19,13 @@ btn.forEach((button) => {
 
       console.dir(form);
 
-      // Get all input elements in the form
       const inputs = form.getElementsByTagName("input");
 
-      // Iterate over each input element and remove the 'disabled' attribute
       for (let i = 0; i < inputs.length; i++) {
         inputs[i].removeAttribute("disabled");
       }
     }
 
-    // Log the ID of the clicked form
     console.log("Clicked form ID:", clickedbuttonId);
   });
 });
