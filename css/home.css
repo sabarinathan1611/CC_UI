@@ -16,6 +16,10 @@ body {
 animation-iteration-count: infinite; */
   font-family: "Noto Sans", sans-serif;
 }
+.popup{
+  background-color: #fff;
+  color: #fff;
+}
 
 
 /* @-webkit-keyframes Aurora {

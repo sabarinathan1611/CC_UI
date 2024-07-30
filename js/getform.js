@@ -29,15 +29,18 @@ function handleDrop(event) {
 }
 
 function handleFiles(files) {
+  console.log("LOG :", files.length);
   for (const file of files) {
     console.log("File name:", file.name);
     console.log("File type:", file.type);
     console.log("File size:", file.size, "bytes");
+
     // You can perform further processing with the file here
   }
+  alert("😊 This feature currently in maintenance ⚒️");
 }
 
-document.getElementById("fileInput").addEventListener("change", function () {
-  const files = this.files;
-  handleFiles(files);
-});
+// document.getElementById("fileInput").addEventListener("change", function () {
+//   const files = this.files;
+//   handleFiles(files);
+// });
