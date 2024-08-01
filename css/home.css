@@ -16,11 +16,10 @@ body {
 animation-iteration-count: infinite; */
   font-family: "Noto Sans", sans-serif;
 }
-.popup{
+.popup {
   background-color: #fff;
   color: #fff;
 }
-
 
 /* @-webkit-keyframes Aurora {
     0%{background-position:18% 0%}
@@ -38,7 +37,6 @@ animation-iteration-count: infinite; */
     100%{background-position:18% 0%}
 } */
 
-
 .container {
   width: 100%;
   height: 100vh;
@@ -53,7 +51,7 @@ section {
   align-items: center;
   gap: 20px;
   margin: 20px;
-/* z-index: -99; */
+  /* z-index: -99; */
   position: relative;
   top: 40px;
 }
@@ -164,7 +162,6 @@ button:hover {
 }
 
 @media (max-width: 870px) {
-
   .container {
     width: 100%;
     height: 100vh;
@@ -180,8 +177,8 @@ button:hover {
 }
 @media only screen and (max-width: 799px) {
   .Password form,
-  .file form,section {
+  .file form,
+  section {
     z-index: -99;
   }
- 
 }
