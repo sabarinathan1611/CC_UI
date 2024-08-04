@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #16161d;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section {
+  margin: 10px;
+}
+
+img {
+  width: 200px;
+  height: 199px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  padding: 10px;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.username {
+  color: #fff;
+  font-size: 30px;
+  padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.user-name {
+  color: #fff;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.user-email {
+  color: #fff;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.edit-btn {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: rgba(127, 255, 212, 0.692);
+
+  cursor: pointer;
+  border: 0px solid #fff;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.edit-btn:hover {
+  background-color: rgba(127, 255, 212, 0.176);
+}
+form {
+  scale: 0;
+}
+@media (max-width: 698px) {
+  .container {
+    align-content: flex-end;
+  }
+
+  img {
+    width: 150px;
+    height: 149px;
+  }
+}

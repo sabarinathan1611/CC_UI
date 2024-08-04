@@ -14,6 +14,7 @@ body {
   -moz-animation: Aurora 180s ease infinite;
   animation: Aurora 180s ease infinite;
 animation-iteration-count: infinite; */
+
   font-family: "Noto Sans", sans-serif;
 }
 .popup {
