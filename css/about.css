@@ -85,10 +85,10 @@ footer form label {
   /* line-height: 10px; */
 }
 footer form {
-padding: 0;
-margin: 0;
-
+  padding: 0;
+  margin: 0;
 }
+
 .form__group {
   position: relative;
   padding: 15px 0 0;
@@ -151,7 +151,7 @@ margin: 0;
 .form__field:invalid {
   box-shadow: none;
 }
-form textarea{
+form textarea {
   height: 60px;
 }
 
@@ -185,14 +185,14 @@ footer a {
   }
 }
 @media (max-width: 750px) {
-footer a{
-  font-size: 10px;
-}
-span{
-  span {
-    font-size: 30px;
-    padding: 5px;
-    margin: 5px;
+  footer a {
+    font-size: 10px;
   }
-}
+  span {
+    span {
+      font-size: 30px;
+      padding: 5px;
+      margin: 5px;
+    }
+  }
 }

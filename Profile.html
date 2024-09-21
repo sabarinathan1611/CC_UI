@@ -3,9 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/nav.css" />
     <link rel="stylesheet" href="/css/profile.css" />
+    <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="/css/input.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Profile</title>
   </head>
   <body>
@@ -60,26 +68,66 @@
       </section>
       <section>
         <div class="details">
-          <div class="username">Sudo Boi</div>
+          <div class="username">sabarinathan__01</div>
           <div class="user-name">Sabarinathan V</div>
           <div class="user-email">sabarinathan@nethun.com</div>
-          <button class="edit-btn">Edit</button>
-
-          <form action="">
-            <input type="text" name="name" id="" value="UserName" />
-            <input type="text" name="name" id="" value="Name" />
-            <input type="text" name="name" id="" value="Email" />
-          </form>
+          <sapn onclick="toggleAllSections()" class="edit-btn">Edit</sapn>
         </div>
       </section>
       <section>
         <div class="useage">
-          <canvas id="myChart" width="300" height="200"></canvas>
+          <canvas id="myChart" width="300" height="500"></canvas>
         </div>
       </section>
-    </div>
-    <script src="/js/home.js"></script>
+      <div class="edit">
+        <i
+          onclick="toggleAllSections()"
+          class="fa-regular fa-circle-xmark fa-2x"
+          style="color: #20dfaf"
+        ></i>
 
-    <script src="/js/script.js"></script>
+        <h2>Edit Profile</h2>
+        <form action="/feed-back" method="post">
+          <div class="form__group field">
+            <input
+              type="input"
+              class="form__field"
+              placeholder="Name"
+              name="name"
+              id="name"
+              required
+            />
+            <label for="name" class="form__label">Username</label>
+          </div>
+          <div class="form__group field">
+            <input
+              type="input"
+              class="form__field"
+              placeholder="Username"
+              name="username"
+              id="username"
+              required
+            />
+            <label for="name" class="form__label">Name</label>
+          </div>
+          <div class="form__group field">
+            <input
+              type="input"
+              class="form__field"
+              placeholder="Email"
+              name="name"
+              id="name"
+              required
+            />
+            <label for="name" class="form__label">Email</label>
+          </div>
+          <button class="form__group" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="/js/nav.js"></script>
+    <script src="/js/profile.js"></script>
+    <script src="/js/graph.js"></script>
   </body>
 </html>
